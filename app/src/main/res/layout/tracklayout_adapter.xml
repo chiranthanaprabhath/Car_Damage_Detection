@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/liteBlueSplash">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/liteBlueSplash"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/liteBlack"
+        android:id="@+id/ClaimeNotrack"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/liteBlueSplash"
+        android:textColor="@color/liteBlack"
+        android:textSize="16dp"
+        android:id="@+id/date"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/liteBlueSplash"
+        android:textColor="@color/liteBlack"
+        android:textSize="16dp"
+        android:id="@+id/Stautstrack"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/liteBlueSplash">
+
+        <ImageView
+            android:scaleType="fitEnd"
+            android:padding="1dp"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/liteBlueSplash"
+            android:id="@+id/findmoreButton"
+            android:src="@drawable/arrowforword"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+</GridLayout>

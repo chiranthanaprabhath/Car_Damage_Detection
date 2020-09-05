@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andorid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/Background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            android:background="@color/DarkerVarient"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/backarrow" />
+                <TextView
+                    android:id="@+id/textViewd4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    android:text="PAY PREMIUM" />
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/pureBlack"
+                    android:src="@drawable/menu" />
+
+
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            ></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/liteBlack"
+            android:layout_gravity="center"
+            android:text="Annual Premium"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/annualAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:text="Wating.."
+            android:textColor="@color/liteBlack"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/liteBlack"
+                android:layout_gravity="center"
+                android:text="Branch Name"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/branch_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pureBlack"
+                android:layout_gravity="center"
+                android:textAlignment="textEnd"
+                android:text="waiting.."
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+
+            ></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/liteBlack"
+                android:layout_gravity="center"
+                android:text="Policy Number"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/PolicyNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pureBlack"
+                android:layout_gravity="center"
+                android:textAlignment="textEnd"
+                android:text="waiting.."
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/liteBlack"
+                android:layout_gravity="center"
+                android:text="Vehical Number"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/vehical_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pureBlack"
+                android:layout_gravity="center"
+                android:textAlignment="textEnd"
+                android:text="waiting.."
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/liteBlack"
+                android:layout_gravity="center"
+                android:text="Total"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pureBlack"
+                android:layout_gravity="center"
+                android:textAlignment="textEnd"
+                android:text="waiting.."
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/period_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pureBlack"
+                android:gravity="center"
+                android:text="Wating"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp">
+
+            <Button
+                android:id="@+id/pay_premum"
+                android:background="@drawable/round_button_layout"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:text="PAY NOW"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+            </Button>
+        </LinearLayout></RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

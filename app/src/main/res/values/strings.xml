@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ClaimNow</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="damage_prompt">Cause of Damage </string>
+
+    <string-array name="damage_arrays">
+        <item>Hit and run</item>
+        <item>Floods</item>
+        <item>Skidding</item>
+        <item>Falling asleep</item>
+        <item>Malicious act</item>
+        <item>Going over cliff</item>
+        <item>Fire</item>
+        <item>Terrorism</item>
+        <item>Static Failure</item>
+        <item>Breaking</item>
+        <item>Self-ignition</item>
+        <item>Mechanical failure</item>
+        <item>Electrical Failure</item>
+        <item>Toppled</item>
+        <item>Theft of parts</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string name="purchase">Purchase</string>
+    <string name="valid">Form is valid</string>
+    <string name="invalid">Form is invalid</string>
+    <string name="light_theme_form">Light Theme</string>
+    <string name="dark_theme_form">Dark Theme</string>
+    <string name="scan_with_card_io">Scan with card.io</string>
+    <string name="title_activity_maps2">Map</string>
+
+
+</resources>

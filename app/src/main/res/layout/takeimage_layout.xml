@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andorid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/Background">
+
+    <RelativeLayout
+        android:layout_weight="0.4"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextColor="@android:color/white"
+                android:background="@color/DarkerVarient"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/menu"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/backarrow" />
+                    <TextView
+                        android:id="@+id/textViewd4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/White"
+                        android:text="REPORT AN ACCIDENT" />
+                    <ImageView
+                        android:id="@+id/share"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/pureBlack"
+                        android:src="@drawable/menu" />
+
+
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                ></LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/liteBlueSplash"
+                android:id="@+id/showImage">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/liteBlack"
+                    android:layout_gravity="center"
+                    android:text="Snap photo of the damage on the spot to use quick photo option and receive calime on the spot"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/androidlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:scrollbars="vertical"
+                            android:scrollbarSize="8dp"
+                            android:visibility="visible"
+                            android:fadeScrollbars="false"
+                            android:scrollbarThumbVertical="@color/buttomBlue">
+                        </ListView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="@color/liteBlueSplash"
+                        android:id="@+id/addmoreimage">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/addimage"
+                                android:gravity="center">
+
+                            </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pureBlack"
+                            android:layout_gravity="center"
+                            android:text="ADD MORE IMAGES"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.9"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/Background"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@color/liteBlueSplash">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/pureBlack"
+                        android:layout_gravity="left"
+                        android:text="METER READING"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0"/>
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/meter_reading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Meter Reading"
+                        android:textColorHint="@color/White"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/liteBlack"
+                        android:letterSpacing="0.1"
+                        android:textSize="16dp"
+                        android:textColor="@color/White"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/Background"></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@color/liteBlueSplash">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/pureBlack"
+                        android:layout_gravity="left"
+                        android:text="DAMAGE TYPE"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_weight="0"/>
+                    <Spinner
+                        android:layout_weight="1"
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/liteBlack"
+                        android:entries="@array/damage_arrays"
+                        android:prompt="@string/damage_prompt"
+                        android:popupBackground="@color/liteBlack"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/Background"></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@color/liteBlueSplash"
+                    android:id="@+id/go_location">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/round_button_layout">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow"
+                    android:layout_centerInParent="true">
+
+                </ImageView>
+
+
+               </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

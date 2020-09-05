@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andorid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/Background">
+
+    <RelativeLayout
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextColor="@android:color/white"
+                android:background="@color/DarkerVarient"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/menu"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/backarrow" />
+                    <TextView
+                        android:id="@+id/textViewd4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/White"
+                        android:text="QUICK PHOTO CLAIM" />
+                    <ImageView
+                        android:id="@+id/share"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/pureBlack"
+                        android:src="@drawable/menu" />
+
+
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                ></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/liteBlueSplash"
+                android:id="@+id/showImage">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/White"
+                    android:orientation="horizontal">
+                    <ListView
+                        android:id="@+id/androidlistdetect"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:scrollbars="vertical"
+                        android:scrollbarSize="8dp"
+                        android:visibility="visible"
+                        android:fadeScrollbars="false"
+                        android:scrollbarThumbVertical="@color/buttomBlue">
+                    </ListView>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/claimeNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pureBlack"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="visible"
+            android:layout_marginTop="300dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.9"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@color/liteBlueSplash">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Damage Type  : "
+                        android:layout_alignParentLeft="true"
+                        android:textSize="15dp"
+                        android:textColor="@color/pureBlack"
+                        android:layout_marginRight="15dp"/>
+
+                    <TextView
+                        android:id="@+id/claimetype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/liteBlack"
+                        android:layout_alignParentRight="true"
+                        android:text="Waiting.." />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@color/liteBlueSplash">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date and Time  : "
+                        android:layout_alignParentLeft="true"
+                        android:textSize="15dp"
+                        android:textColor="@color/pureBlack"
+                        android:layout_marginRight="15dp"/>
+
+                    <TextView
+                        android:id="@+id/Damgetype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/liteBlack"
+                        android:layout_alignParentRight="true"
+                        android:text="Waiting.." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@color/liteBlueSplash">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estimation  : "
+                        android:layout_alignParentLeft="true"
+                        android:textSize="15dp"
+                        android:textColor="@color/pureBlack"
+                        android:layout_marginRight="15dp"/>
+
+                    <TextView
+                        android:id="@+id/Estimationtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Waiting.."
+                        android:textColor="@color/liteBlack"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@color/liteBlueSplash">
+                    <Button
+                        android:id="@+id/iddetectaccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="ACCEPT"
+                        android:textColor="@color/White"
+                        android:background="@drawable/round_button_layout"
+                        android:layout_marginRight="10dp"></Button>
+                    <Button
+                        android:id="@+id/derecttoweb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="REQUEST RE-EVALUTION"
+                        android:textColor="@color/White"
+                        android:textSize="10dp"
+                        android:background="@drawable/round_button_layout"
+                        android:layout_marginLeft="10dp"></Button>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
